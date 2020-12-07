@@ -1,0 +1,33 @@
+<%- include('header'); -%>
+<h1><%= title %></h1>
+
+<h2>FORMULAIRE A REMPLIR</h2>
+<form  class="needs-validation" novalidate id="form">
+  <label for="prenom">Prenom</label>
+  <input id="prenomInput" name="prenomInput" type="text" required /><br />
+  <label for="nom">Nom</label>
+  <input id="nomInput" name="nomInput" type="text" required /><br />
+  <label for="adresse mail">Adresse email</label>
+  <input id="adresseemailInput" name="adresseemailInput" type="email" required /><br />
+  <label for="date-de-naissance">Date de naissance</label>
+  <input id="datenaissanceInput" name="datenaissanceInput" type="date" required />
+  <fieldset class="adresse">
+    <legend>Adresse postal</legend>
+    <label>Rue</label>
+    <input id="rueInput" name="rueInput" type="text" required /><br />
+    <label>Numero</label>
+    <input id="numeroInput" name="numeroInput" type="number" required /><br />
+    <label>Code postal</label>
+    <input id="codepostalInput" name="codepostalInput" type="number" required /><br />
+    <label>Commune</label>
+    <input id="CommuneInput" name="CommuneInput" type="text" required />
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Valider</button>
+  <button type="reset" class="btn btn-outline-secondary">Cancel</button><br />
+</form>
+<p><a href="/" >acceuil</a></p>
+
+
+
+<script src="/js/form-script.js" defer></script>
+<%- include('footer') -%>

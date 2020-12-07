@@ -1,4 +1,6 @@
 const forms = document.querySelectorAll('.needs-validation');
+const dateControl = document.querySelector('input[type="date"]');
+dateControl.value = '1900-01-01';
 
 // Enable Bootstrap validation custom styles
 // https://v5.getbootstrap.com/docs/5.0/forms/validation/#custom-styles
